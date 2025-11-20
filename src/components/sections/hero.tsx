@@ -1,21 +1,35 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function HeroSection() {
+  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
+
   return (
-    <section id="hero" className="w-full py-24 md:py-32 lg:py-40 bg-card">
-      <div className="container text-center">
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary">
-          Electronics & Telecommunications Engineer
+    <section id="hero" className="relative w-full h-[80vh] flex items-center justify-center text-center overflow-hidden">
+      {heroImage && (
+        <Image
+          src={heroImage.imageUrl}
+          alt={heroImage.description}
+          fill
+          className="object-cover -z-10 brightness-50"
+          data-ai-hint={heroImage.imageHint}
+          priority
+        />
+      )}
+      <div className="container z-10">
+        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-white">
+          Luis Miguel Ortiz Muñoz
         </h1>
-        <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-6">
-          Specializing in automation and cloud computing. Passionate about building innovative solutions that bridge hardware and software.
+        <p className="mx-auto max-w-[700px] text-slate-200 md:text-xl mt-6">
+          Ingeniero en Electrónica y Telecomunicaciones especializado en automatización y cloud computing.
         </p>
         <div className="mt-8">
           <Button size="lg" asChild>
             <Link href="#contact">
-              Get In Touch <ArrowRight className="ml-2 h-5 w-5" />
+              Ponte en Contacto <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
         </div>

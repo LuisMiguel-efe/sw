@@ -4,8 +4,8 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Electron Cloud Portfolio',
-  description: 'Portfolio of an Electronics and Telecommunications Engineer',
+  title: 'Luis Miguel Ortiz Muñoz - Portafolio',
+  description: 'Portafolio de Luis Miguel Ortiz Muñoz, Ingeniero en Electrónica y Telecomunicaciones',
 };
 
 export default function RootLayout({
