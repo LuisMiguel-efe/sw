@@ -1,16 +1,16 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { socialLinks } from '@/lib/data';
-import { Zap } from 'lucide-react';
 
 export function Footer() {
   return (
     <footer className="border-t border-border/40 bg-background/95">
       <div className="container py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
-          <Zap className="h-5 w-5 text-primary" />
+          <Image src="/logo-dark.png" alt="Logo" width={24} height={24} />
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Electron Cloud Portfolio. All rights reserved.
+            &copy; {new Date().getFullYear()} Electron Cloud Portafolio. All rights reserved.
           </p>
         </div>
         <div className="flex items-center gap-2">

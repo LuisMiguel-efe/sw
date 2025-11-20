@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Download } from 'lucide-react';
+import { Github, Linkedin, Instagram, Download } from 'lucide-react';
 import { PlaceHolderImages } from './placeholder-images';
 
 export const navLinks = [
@@ -9,9 +9,9 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
-  { name: 'GitHub', href: '#', icon: Github },
-  { name: 'LinkedIn', href: 'https://linkedin.com/in/luismiguelplus', icon: Linkedin },
-  { name: 'Twitter', href: '#', icon: Twitter },
+  { name: 'GitHub', href: 'https://github.com/LuisMiguel-efe', icon: Github },
+  { name: 'LinkedIn', href: 'https://linkedin.com/in/luismigueldev', icon: Linkedin },
+  { name: 'Instagram', href: 'https://instagram.com/luismigueldev', icon: Instagram },
 ];
 
 const getPlaceholderImage = (id: string) => {
@@ -21,7 +21,7 @@ const getPlaceholderImage = (id: string) => {
 export const projects = [
   {
     id: '1',
-    title: 'Virtual Assistant (PIET-Bot) with Cloud Deployment',
+    title: 'Virtual Assistant Bot with Cloud Deployment',
     description: 'Designed and deployed a Telegram bot for student support, using a microservices architecture with FastAPI and Python. Implemented a web scraping system for extracting and caching information. Integrated an LLM for natural language processing and configured a CI/CD workflow on Render.',
     techStack: ['FastAPI', 'Python', 'Web Scraping', 'Hugging Face', 'Docker', 'Render'],
     link: '#',
@@ -57,7 +57,7 @@ export const skills = [
   { name: 'Python/FastAPI', proficiency: 95 },
   { name: 'Node.js/JavaScript', proficiency: 85 },
   { name: 'AI & Automation', proficiency: 90 },
-  { name: 'Cloud & DevOps', proficiency: 88 },
+  { name: 'Cloud & DevOps', proficiency: 85 },
   { name: 'Cybersecurity', proficiency: 80 },
-  { name: 'Databases (SQL/NoSQL)', proficiency: 85 },
+  { name: 'Databases (SQL/NoSQL)', proficiency: 90 },
 ];
