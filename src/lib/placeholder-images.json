@@ -3,7 +3,7 @@
     {
       "id": "headshot",
       "description": "Professional headshot of the engineer",
-      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwaGVhZHNob3R8ZW58MHx8fHwxNzYzNTc4NjQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/mi-foto.png",
       "imageHint": "professional headshot"
     },
     {
@@ -32,9 +32,9 @@
     },
     {
       "id": "hero-background",
-      "description": "A background image showing circuitry and technology.",
-      "imageUrl": "https://images.unsplash.com/photo-1651340550839-3b295d930048?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2lyY3VpdCUyMGJvYXJkfGVufDB8fHx8MTc2MzY0NTY4OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "circuit board"
+      "description": "A man looking out over a beautiful landscape.",
+      "imageUrl": "/fondo-hero.JPG",
+      "imageHint": "mountain landscape"
     }
   ]
 }

@@ -24,7 +24,7 @@ export function HeroSection() {
           Luis Miguel Ortiz Muñoz
         </h1>
         <p className="mx-auto max-w-[700px] text-slate-200 md:text-xl mt-6">
-          Ingeniero en Electrónica y Telecomunicaciones especializado en automatización y cloud computing.
+          Software Developer and Automation Engineer
         </p>
         <div className="mt-8">
           <Button size="lg" asChild>

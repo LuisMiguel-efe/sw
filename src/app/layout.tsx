@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'Luis Miguel Ortiz Muñoz - Portafolio',
-  description: 'Portafolio de Luis Miguel Ortiz Muñoz, Ingeniero en Electrónica y Telecomunicaciones',
+  description: 'Portafolio de Luis Miguel Ortiz Muñoz, Software Developer and Automation Engineer',
 };
 
 export default function RootLayout({

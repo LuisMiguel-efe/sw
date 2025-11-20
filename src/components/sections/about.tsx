@@ -28,13 +28,13 @@ export function AboutSection() {
             <div className="md:col-span-2">
               <CardContent className="p-8 md:p-12 space-y-4">
                 <p className="text-lg text-muted-foreground">
-                  I am an Electronics and Telecommunications Engineer with a profound interest in the intersection of hardware and software. My academic journey has equipped me with a strong foundation in automation, cloud computing, and embedded systems.
+                  Software Developer and Automation Engineer, soon to graduate with a degree in Electronic and Telecommunications Engineering, focused on backend development, process automation, and cloud deployment.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  I thrive on solving complex problems and am constantly exploring new technologies to create efficient and scalable solutions. From designing IoT systems on AWS to programming robotic arms with ROS, I enjoy turning theoretical concepts into tangible projects.
+                  Proven experience in creating REST APIs, integrating LLMs (Gemini, Hugging Face), and optimizing workflows, achieving automation rates of over 90%. Proficient in Python (FastAPI), Node.js, Google Apps Script, Docker, and Render.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  My goal is to leverage my skills in a challenging role where I can contribute to cutting-edge technological advancements and continue to grow as an engineer.
+                  Solid experience in cybersecurity (firewalls, ACLs) and networking (SDN). Recognized for leadership, critical thinking, and adaptability, with an interest in software development, automation, and cloud computing.
                 </p>
               </CardContent>
             </div>
