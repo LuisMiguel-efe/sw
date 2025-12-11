@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="border-t border-border/40 bg-background/95">
       <div className="container py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
-          <Image src="/logo-dark.png" alt="Logo" width={24} height={24} />
+          <Image src="/logo.png" alt="Logo" width={24} height={24} />
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} Electron Cloud Portafolio. All rights reserved.
           </p>
