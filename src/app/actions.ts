@@ -24,10 +24,14 @@ export async function submitContactForm(prevState: any, formData: FormData) {
   }
   
   const { name, email, message } = validatedFields.data;
+  const recipientEmail = 'luismiguelefe@gmail.com';
 
   try {
     // Here you would typically send an email, e.g., using a service like Resend or Nodemailer
-    console.log('New message from:', { name, email, message });
+    // to recipientEmail.
+    console.log(`New message from: ${name} <${email}>`);
+    console.log(`Message: ${message}`);
+    console.log(`Intended recipient: ${recipientEmail}`);
 
     // Simulate a network delay
     await new Promise(resolve => setTimeout(resolve, 1000));
