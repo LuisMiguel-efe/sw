@@ -40,7 +40,7 @@ export const projects = [
     title: 'SDN Web Application for Simulation and Management',
     description: 'Developed a web application for network visualization and real-time configuration of OpenFlow rules. It featured a frontend in HTML5/CSS3 and a Python backend. Reduced SDN configuration time by 40%.',
     techStack: ['HTML5/CSS3', 'Python', 'OpenFlow', 'SDN', 'Ryu'],
-    link: '#',
+    link: 'https://github.com/LuisMiguel-efe/sdn_app_web',
     image: getPlaceholderImage('project3'),
   },
   {
@@ -48,7 +48,7 @@ export const projects = [
     title: 'Biometric Access System',
     description: 'Implemented a secure biometric access system with a web platform. The system used REST APIs (FastAPI) and managed up to 100 users, reducing validation time by 45%.',
     techStack: ['FastAPI', 'Python', 'REST API', 'Full Stack', 'Machine Learning'],
-    link: '#',
+    link: 'https://github.com/LuisMiguel-efe/unikey',
     image: getPlaceholderImage('project4'),
   },
 ];
