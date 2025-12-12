@@ -7,6 +7,9 @@ import { WhatsAppButton } from '@/components/whatsapp-button';
 export const metadata: Metadata = {
   title: 'Luis Miguel Ortiz Muñoz - Portafolio',
   description: 'Portafolio de Luis Miguel Ortiz Muñoz, Software Developer and Automation Engineer',
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
