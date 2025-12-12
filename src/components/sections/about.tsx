@@ -31,7 +31,7 @@ export function AboutSection() {
                   Software Developer and Automation Engineer, soon to graduate with a degree in Electronic and Telecommunications Engineering, focused on backend development, process automation, and cloud deployment.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  Proven experience in creating REST APIs, integrating LLMs (Gemini, Hugging Face), and optimizing workflows, achieving automation rates of over 90%. Proficient in Python (FastAPI), Node.js, Google Apps Script, Docker, and Render.
+                  Proven experience in creating REST APIs, integrating LLMs, and optimizing workflows, achieving automation rates of over 90%. Proficient in Python (FastAPI), Node.js, Google Apps Script, Docker, and Render.
                 </p>
                 <p className="text-lg text-muted-foreground">
                   Solid experience in cybersecurity (firewalls, ACLs) and networking (SDN). Recognized for leadership, critical thinking, and adaptability, with an interest in software development, automation, and cloud computing.
