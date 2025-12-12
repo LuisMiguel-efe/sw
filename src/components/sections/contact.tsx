@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -16,8 +15,6 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
-import { submitContactForm } from '@/app/actions';
 import { Send } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
@@ -30,8 +27,6 @@ const contactSchema = z.object({
 type ContactFormValues = z.infer<typeof contactSchema>;
 
 export function ContactSection() {
-  const { toast } = useToast();
-
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -43,23 +38,19 @@ export function ContactSection() {
   
   const { formState } = form;
 
-  async function handleFormSubmit(formData: FormData) {
-    const state = await submitContactForm(null, formData);
-    if (state.message) {
-      if (state.success) {
-        toast({
-          title: 'Success!',
-          description: state.message,
-        });
-        form.reset();
-      } else {
-        toast({
-          variant: 'destructive',
-          title: 'Error',
-          description: state.message,
-        });
-      }
-    }
+  function onSubmit(data: ContactFormValues) {
+    const phoneNumber = '573142288528';
+    const prefilledMessage = `¡Hola, Luis Miguel!
+
+Mi nombre es ${data.name}.
+
+${data.message}
+
+(Mi correo de contacto es: ${data.email})
+`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(prefilledMessage)}`;
+    window.open(whatsappUrl, '_blank');
+    form.reset();
   }
 
 
@@ -75,7 +66,7 @@ export function ContactSection() {
           </CardHeader>
           <CardContent>
             <Form {...form}>
-              <form action={handleFormSubmit} className="space-y-6">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
                   control={form.control}
                   name="name"
@@ -117,7 +108,7 @@ export function ContactSection() {
                 />
                 <Button type="submit" className="w-full" disabled={formState.isSubmitting}>
                   <Send className="mr-2 h-4 w-4" />
-                  {formState.isSubmitting ? 'Sending...' : 'Send Message'}
+                  {formState.isSubmitting ? 'Redirecting...' : 'Send Message via WhatsApp'}
                 </Button>
               </form>
             </Form>
